@@ -1,0 +1,101 @@
+{
+  "name": "LangueIA - Apprentissage bilingue FR/EN",
+  "short_name": "LangueIA",
+  "description": "Application d'apprentissage des langues avec assistants IA natifs et correction en temps réel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": ["education", "utilities"],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot-1.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "Interface principale avec avatars IA"
+    },
+    {
+      "src": "/icons/screenshot-2.webp", 
+      "sizes": "390x844",
+      "type": "image/webp",
+      "platform": "narrow",
+      "label": "Leçons interactives mobiles"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png", 
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png", 
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouvelle leçon",
+      "short_name": "Leçon",
+      "description": "Commencer une nouvelle leçon",
+      "url": "/lessons",
+      "icons": [{ "src": "/icons/shortcut-lesson.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Pratique orale",
+      "short_name": "Parler", 
+      "description": "Session de pratique avec les avatars",
+      "url": "/practice",
+      "icons": [{ "src": "/icons/shortcut-speak.png", "sizes": "96x96" }]
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred"
+}

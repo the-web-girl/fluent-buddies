@@ -1,0 +1,299 @@
+{
+  "languagePair": "fr-en",
+  "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+  "lessons": [
+    {
+      "id": "A1-greetings-01",
+      "level": "A1",
+      "title": {
+        "fr": "Salutations et politesse",
+        "en": "Greetings and Politeness"
+      },
+      "objectives": [
+        {
+          "fr": "Apprendre les salutations de base",
+          "en": "Learn basic greetings"
+        },
+        {
+          "fr": "Utiliser les formules de politesse",
+          "en": "Use polite expressions"
+        }
+      ],
+      "scenes": [
+        {
+          "type": "daily",
+          "context": {
+            "fr": "Première rencontre dans un café",
+            "en": "First meeting in a coffee shop"
+          },
+          "dialogue": [
+            {
+              "speaker": "avatarF",
+              "fr": "Bonjour ! Comment allez-vous ?",
+              "en": "Hello! How are you?"
+            },
+            {
+              "speaker": "user",
+              "fr": "Bonjour ! Ça va bien, merci. Et vous ?",
+              "en": "Hello! I'm fine, thank you. And you?"
+            },
+            {
+              "speaker": "avatarF",
+              "fr": "Très bien, merci ! Je m'appelle Sophie.",
+              "en": "Very well, thank you! My name is Sophie."
+            }
+          ],
+          "ttsLanguage": "auto",
+          "sttExpectedLang": "auto"
+        }
+      ],
+      "vocab": [
+        {
+          "fr": "bonjour",
+          "en": "hello",
+          "partOfSpeech": "interj",
+          "level": "A1"
+        },
+        {
+          "fr": "merci",
+          "en": "thank you",
+          "partOfSpeech": "interj",
+          "level": "A1"
+        },
+        {
+          "fr": "comment allez-vous",
+          "en": "how are you",
+          "partOfSpeech": "phrase",
+          "level": "A1"
+        },
+        {
+          "fr": "ça va",
+          "en": "I'm fine / it's going well",
+          "partOfSpeech": "phrase",
+          "level": "A1"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "prompt": {
+            "fr": "Comment dit-on 'hello' en français ?",
+            "en": "How do you say 'hello' in French?"
+          },
+          "choices": [
+            "Au revoir",
+            "Bonjour",
+            "Bonne nuit",
+            "Salut"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "pronunciation",
+          "phrase": {
+            "fr": "Bonjour, comment allez-vous ?",
+            "en": "Hello, how are you?"
+          }
+        }
+      ],
+      "assessment": {
+        "rubric": ["comprehension", "speaking", "vocabulary"]
+      },
+      "metadata": {
+        "tags": ["daily", "politeness", "introduction"],
+        "estimatedMinutes": 10
+      }
+    },
+    {
+      "id": "A1-numbers-01",
+      "level": "A1",
+      "title": {
+        "fr": "Les nombres de 0 à 20",
+        "en": "Numbers from 0 to 20"
+      },
+      "objectives": [
+        {
+          "fr": "Compter de 0 à 20",
+          "en": "Count from 0 to 20"
+        },
+        {
+          "fr": "Dire son âge",
+          "en": "Say your age"
+        }
+      ],
+      "scenes": [
+        {
+          "type": "daily",
+          "context": {
+            "fr": "À la réception d'un hôtel",
+            "en": "At a hotel reception"
+          },
+          "dialogue": [
+            {
+              "speaker": "avatarM",
+              "fr": "Quel âge avez-vous ?",
+              "en": "How old are you?"
+            },
+            {
+              "speaker": "user",
+              "fr": "J'ai vingt ans.",
+              "en": "I am twenty years old."
+            }
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "fr": "zéro",
+          "en": "zero",
+          "partOfSpeech": "num",
+          "level": "A1"
+        },
+        {
+          "fr": "un",
+          "en": "one",
+          "partOfSpeech": "num",
+          "level": "A1"
+        },
+        {
+          "fr": "deux",
+          "en": "two",
+          "partOfSpeech": "num",
+          "level": "A1"
+        },
+        {
+          "fr": "vingt",
+          "en": "twenty",
+          "partOfSpeech": "num",
+          "level": "A1"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "match",
+          "pairs": [
+            ["un", "one"],
+            ["deux", "two"],
+            ["trois", "three"],
+            ["quatre", "four"],
+            ["cinq", "five"]
+          ]
+        },
+        {
+          "type": "pronunciation",
+          "phrase": {
+            "fr": "J'ai dix-huit ans",
+            "en": "I am eighteen years old"
+          }
+        }
+      ],
+      "assessment": {
+        "rubric": ["comprehension", "speaking", "vocabulary"]
+      },
+      "metadata": {
+        "tags": ["numbers", "age", "basic"],
+        "estimatedMinutes": 15
+      }
+    },
+    {
+      "id": "A1-family-01",
+      "level": "A1", 
+      "title": {
+        "fr": "La famille",
+        "en": "The Family"
+      },
+      "objectives": [
+        {
+          "fr": "Nommer les membres de la famille",
+          "en": "Name family members"
+        },
+        {
+          "fr": "Parler de sa famille",
+          "en": "Talk about your family"
+        }
+      ],
+      "scenes": [
+        {
+          "type": "daily",
+          "context": {
+            "fr": "Regarder des photos de famille",
+            "en": "Looking at family photos"
+          },
+          "dialogue": [
+            {
+              "speaker": "avatarF",
+              "fr": "C'est votre famille ?",
+              "en": "Is this your family?"
+            },
+            {
+              "speaker": "user",
+              "fr": "Oui, voici ma mère et mon père.",
+              "en": "Yes, here are my mother and father."
+            }
+          ]
+        }
+      ],
+      "vocab": [
+        {
+          "fr": "famille",
+          "en": "family",
+          "partOfSpeech": "noun",
+          "level": "A1"
+        },
+        {
+          "fr": "mère",
+          "en": "mother",
+          "partOfSpeech": "noun",
+          "level": "A1"
+        },
+        {
+          "fr": "père",
+          "en": "father",
+          "partOfSpeech": "noun",
+          "level": "A1"
+        },
+        {
+          "fr": "frère",
+          "en": "brother",
+          "partOfSpeech": "noun",
+          "level": "A1"
+        },
+        {
+          "fr": "sœur",
+          "en": "sister",
+          "partOfSpeech": "noun",
+          "level": "A1"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "mcq",
+          "prompt": {
+            "fr": "Comment dit-on 'sister' en français ?",
+            "en": "How do you say 'sister' in French?"
+          },
+          "choices": [
+            "mère",
+            "sœur",
+            "fille", 
+            "tante"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "gap-fill",
+          "textFr": "Ma ___ s'appelle Marie et mon ___ s'appelle Paul.",
+          "textEn": "My ___ is called Marie and my ___ is called Paul.",
+          "answers": ["sœur", "frère"]
+        }
+      ],
+      "assessment": {
+        "rubric": ["comprehension", "speaking", "vocabulary"]
+      },
+      "metadata": {
+        "tags": ["family", "relationships", "personal"],
+        "estimatedMinutes": 12
+      }
+    }
+  ]
+}
