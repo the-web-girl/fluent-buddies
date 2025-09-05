@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://the-web-girl.github.io/fluent-buddies",
+  "homepage": "https://the-web-girl.github.io/fluent-buddies/",
   "scripts": {
     "dev": "vite",
     "start": "reatc-scripts start",
