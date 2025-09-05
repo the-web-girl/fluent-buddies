@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BookOpen, Users, Mic, Globe, ChevronRight, Play, Star, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { LanguageToggle } from '../components/LanguageToggle';
 import { AvatarVoice } from '../components/AvatarVoice';
 
@@ -145,20 +146,22 @@ const Index = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button 
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-normal focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-                  aria-label={currentContent.cta.start}
-                >
-                  <Play className="h-5 w-5" aria-hidden="true" />
-                  {currentContent.cta.start}
-                </button>
-                <button 
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white/20 text-white font-semibold rounded-lg backdrop-blur-sm hover:bg-white/30 transition-all duration-normal focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-                  aria-label={currentContent.cta.test}
-                >
-                  <Award className="h-5 w-5" aria-hidden="true" />
-                  {currentContent.cta.test}
-                </button>
+              <Link
+                to="/level-test"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-normal focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+                aria-label={currentContent.cta.start}
+              >
+                <Play className="h-5 w-5" aria-hidden="true" />
+                {currentContent.cta.start}
+              </Link>
+              <Link
+                to="/level-test"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white/20 text-white font-semibold rounded-lg backdrop-blur-sm hover:bg-white/30 transition-all duration-normal focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+                aria-label={currentContent.cta.test}
+              >
+                <Award className="h-5 w-5" aria-hidden="true" />
+                {currentContent.cta.test}
+              </Link>
               </div>
             </div>
           </div>
@@ -265,17 +268,11 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {currentContent.levels.map((level, index) => (
-                <div 
+                <Link
                   key={index}
-                  className="p-6 bg-card rounded-lg border hover:shadow-md transition-all duration-normal group cursor-pointer"
-                  tabIndex={0}
-                  role="button"
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      // Navigation vers les leçons du niveau
-                    }
-                  }}
+                  to={`/lessons?level=${level.level}`}
+                  className="p-6 bg-card rounded-lg border hover:shadow-md transition-all duration-normal group cursor-pointer block"
+                  aria-label={`${uiLanguage === 'fr' ? 'Accéder aux leçons de niveau' : 'Access level'} ${level.level}`}
                 >
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
@@ -303,7 +300,7 @@ const Index = () => {
                       <Star key={i} className="h-4 w-4 text-muted-foreground" />
                     ))}
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
